@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="box.js"></script>
+  
+</head>
+
+<body>
+
+  <a-scene background="color:#000000">
+
+    <a-camera position="0 0 5" zoom>
+
+    </a-camera>
+
+    <a-entity position = "0 0 0" rotation = "0 0 0" move>
+      <a-cone position = "0 1.5 0" color = "cyan" radius-bottom = "0.5" radius-top = "0.1">
+        
+      </a-cone>
+      <a-cylinder position = "0 0.5 0" color = "white" radius = "0.5">
+        
+      </a-cylinder>
+    </a-entity>
+
+    <a-entity animation = "property:rotation;to:0 360 0;easing:linear;loop:true;dur:5000">
+      <a-sphere  src = "https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fearth.jpg" position = "0 -2 0" radius = "3">
+        
+      </a-sphere>
+    </a-entity>
+  </a-scene>
+
+</body>
+
+</html>
+
